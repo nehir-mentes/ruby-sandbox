@@ -1,3 +1,8 @@
+require "active_support/all"
+require "awesome_print"
+require "pry-byebug"
+require "date"
+
 pp "howdy!"
 pp "world!"
 
@@ -5,7 +10,7 @@ require "./goodbye.rb"
 
 pp "after"
 
-require "date"
+
 x = Date.today
 
 pp x.month
@@ -20,10 +25,14 @@ elsif remainder == 1
 elsif remainder == 2
 end
 
-require "active_support/all"
-require "awesome_print"
-require "pry-byebug"
-
 pp "Hello! It is the #{x.day.ordinalize} th of April"
 
 pp "Hello! It is the #{rand(1..30)} th of April"
+
+
+pp "Hi! What's your name?"
+
+# I want the user to type their name
+x = gets.upcase
+
+pp "Happy Monday, #{x}!"
