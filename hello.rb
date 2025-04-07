@@ -33,6 +33,7 @@ pp "Hello! It is the #{rand(1..30)} th of April"
 pp "Hi! What's your name?"
 
 # I want the user to type their name
-x = gets.upcase
+x = gets.chomp.capitalize
+# could have also used gets.gsub("\n", "")
 
-pp "Happy Monday, #{x}!"
+puts "Happy Monday, #{x}!"
