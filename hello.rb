@@ -21,5 +21,9 @@ elsif remainder == 2
 end
 
 require "active_support/all"
+require "awesome_print"
+require "pry-byebug"
 
 pp "Hello! It is the #{x.day.ordinalize} th of April"
+
+pp "Hello! It is the #{rand(1..30)} th of April"
